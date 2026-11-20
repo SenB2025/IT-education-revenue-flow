@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore six education revenue models and experiment with a training programme unit economics simulator.">
+  <title>Revenue Models | Revenue Flow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="rm-page">
+  <header class="rm-top">
+    <a class="rm-brand" href="index.html"><span class="rm-mark">RF</span><span>REVENUE FLOW<small>IN THE EDUCATION ECOSYSTEM</small></span></a>
+    <nav class="rm-nav"><a href="index.html#ecosystem">Ecosystem</a><a class="current" href="#models">Revenue Models</a><a href="#simulator">Revenue Simulator</a></nav>
+  </header>
+  <section class="rm-hero"><div class="rm-eyebrow">EDUCATION BUSINESS INSIGHTS · 02</div><h1>How does education<br><em>make money?</em></h1><p>Different education businesses serve different customers, receive money through different channels and carry different cost structures. Explore six common models.</p></section>
+  <main>
+    <section class="rm-section" id="models">
+      <div class="rm-heading"><div><div class="rm-kicker">THE BUSINESS MODEL EXPLORER</div><h2>Six ways education generates revenue</h2><p>Select a model to examine the payer, provider, revenue mechanism and operating costs.</p></div><div class="rm-count">06 <span>BUSINESS MODELS</span></div></div>
+      <div class="rm-model-grid" id="modelGrid"></div>
+      <article class="rm-detail" id="modelDetail"></article>
+    </section>
+    <section class="rm-simulator-section" id="simulator"><div class="rm-section rm-simulator-inner">
+      <div class="rm-kicker">INTERACTIVE UNIT ECONOMICS</div><h2>Try a simple training revenue model</h2>
+      <p class="rm-sim-intro">Change the assumptions to see how a hypothetical training programme's revenue is allocated. This is a simplified illustration, not an industry benchmark.</p>
+      <div class="rm-simulator">
+        <div class="rm-controls">
+          <label class="rm-control"><span>Fee per learner <strong id="feeValue"></strong></span><input id="fee" type="range" min="2000" max="50000" step="1000" value="10000"><small>₹2,000 – ₹50,000</small></label>
+          <label class="rm-control"><span>Number of learners <strong id="learnersValue"></strong></span><input id="learners" type="range" min="10" max="500" step="10" value="100"><small>10 – 500 learners</small></label>
+          <label class="rm-control"><span>Delivery &amp; operating costs <strong id="deliveryValue"></strong></span><input id="deliveryCost" type="range" min="10" max="70" step="5" value="35"><small>As a share of gross programme revenue</small></label>
+          <label class="rm-control"><span>Partner revenue share <strong id="partnerValue"></strong></span><input id="partnerShare" type="range" min="0" max="50" step="5" value="20"><small id="shareLabel"></small></label>
+        </div>
+        <div class="rm-results">
+          <div class="rm-total-label">TOTAL PROGRAMME REVENUE</div><div class="rm-total" id="grossValue"></div>
+          <div class="rm-result-line"><span>Delivery &amp; operating costs</span><strong id="deliveryAmount"></strong></div>
+          <div class="rm-result-line"><span>Partner share</span><strong id="partnerAmount"></strong></div>
+          <div class="rm-result-bar" aria-label="Revenue allocation"><span class="cost-segment" id="costBar"></span><span class="partner-segment" id="partnerBar"></span><span class="remaining-segment" id="remainBar"></span></div>
+          <div class="rm-legend"><span><i class="legend-cost"></i>Operating costs</span><span><i class="legend-partner"></i>Partner share</span><span><i class="legend-remain"></i>Remaining contribution</span></div>
+          <div class="rm-contribution"><span>REMAINING CONTRIBUTION*</span><strong id="contributionValue"></strong><small id="contributionPct"></small></div>
+          <p class="rm-footnote">*Before taxes, central overheads, financing costs and any other expenses not included above. If the combined cost and partner percentages exceed 100%, the result will be negative.</p>
+        </div>
+      </div>
+    </div></section>
+    <section class="rm-insight"><div class="rm-insight-mark">“</div><div><div class="rm-kicker">A BUSINESS PERSPECTIVE</div><h2>Revenue is not the same as profitability.</h2><p>A programme may generate substantial fees and still be commercially weak if learner acquisition is expensive, delivery costs are high, partner shares are poorly negotiated or enrolment is inconsistent. Understanding the model means understanding both the income and the economics behind it.</p></div></section>
+  </main>
+  <footer class="rm-footer"><div><strong>REVENUE FLOW</strong><span>IN THE EDUCATION ECOSYSTEM</span></div><p>Business models · Partnerships · Revenue economics</p><small>Illustrative scenarios and assumptions. Actual commercial terms vary by provider, market and contract.</small></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

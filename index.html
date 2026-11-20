@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore education business models, partnerships, revenue sharing and growth opportunities.">
+  <title>Revenue Flow in the Education Ecosystem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Revenue Flow home">
+        <span class="brand-mark">RF</span><span>REVENUE FLOW<small>IN THE EDUCATION ECOSYSTEM</small></span>
+      </a>
+      <nav class="site-nav"><a class="active" href="#ecosystem">Ecosystem</a><a href="revenue-models.html">Revenue Models</a></nav>
+    </header>
+    <main id="home">
+      <section class="hero">
+        <div class="eyebrow">EDUCATION BUSINESS INSIGHTS · 01</div>
+        <h1>Understanding the <em>business</em><br>behind education.</h1>
+        <p class="hero-copy">Education is an ecosystem of institutions, training providers, employers, learners, public agencies and technology partners. Explore how they interact — and how money moves between them.</p>
+        <div class="hero-tags"><span>Business models</span><span>Partnerships</span><span>Revenue sharing</span></div>
+      </section>
+      <section class="section" id="ecosystem">
+        <div class="section-heading"><div><div class="eyebrow">THE BIG PICTURE</div><h2>Explore the education ecosystem</h2><p>Select any stakeholder to understand its role in the value chain.</p></div>
+          <button class="flow-toggle" id="flowToggle"><span class="toggle-dot"></span>Show revenue flows</button>
+        </div>
+        <div class="ecosystem-layout" id="ecosystemLayout">
+          <div class="ecosystem-center">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="center-core"><span class="core-icon">↗</span><strong>EDUCATION<br>ECOSYSTEM</strong><small>Value creation · Delivery · Outcomes</small></div>
+            <div id="stakeholderNodes"></div>
+            <div class="flow-note" id="flowNote" hidden>Illustrative payment relationships — not every relationship applies to every programme.</div>
+          </div>
+          <aside class="selection-card" id="selectionCard"></aside>
+        </div>
+        <div class="interaction-hint"><span>↖</span> Choose another stakeholder on the map to explore its business role.</div>
+      </section>
+      <section class="section flow-section" id="flows">
+        <div class="eyebrow">FOLLOW THE MONEY</div><h2>Where does the money flow?</h2>
+        <p class="section-intro">These are common payment relationships in education and training. A real programme may involve only some of them, and the contract determines the actual distribution.</p>
+        <div class="flow-list" id="flowList"></div>
+        <div class="disclaimer"><strong>Important distinction</strong><p>Revenue flow is not the same as profit. A provider may receive a programme fee but must still pay trainers, marketing, technology, facilities, taxes and partner shares. The case studies will examine those economics in more detail.</p></div>
+      </section>
+      <footer><div class="footer-brand">REVENUE FLOW<span>IN THE EDUCATION ECOSYSTEM</span></div><p>An independent exploration of education business models, partnerships and revenue economics.</p><small>Conceptual framework · Illustrative relationships · Not financial advice</small></footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
