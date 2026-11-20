@@ -1,16 +1,20 @@
-REVENUE FLOW — VANILLA JAVASCRIPT VERSION
+REVENUE FLOW IN THE EDUCATION ECOSYSTEM — STATIC WEBSITE
 
-Files:
-- index.html             Page 1: Education Ecosystem Map
-- revenue-models.html    Page 2: Revenue Models + Revenue Simulator
-- style.css              Shared design and responsive styling
-- script.js              Stakeholder interactions, model selector, simulator
+Files to upload to the ROOT of your GitHub repository:
+- index.html
+- revenue-models.html
+- case-study-1.html
+- case-study-2.html
+- case-study-3.html
+- opportunities.html
+- business-development.html
+- about.html
+- style.css
+- pages.css
+- script.js
 
-How to preview:
-1. Extract this ZIP into a folder.
-2. Double-click index.html to open Page 1 in your browser.
-3. Use the top navigation to move between the two pages.
+All pages share the original website styling and navigation. No build tools are required.
 
-No Node.js, npm, React, router, or build step is required.
-For GitHub Pages, upload all four files to the root of a public repository and enable Pages.
-The font sizes used for body copy and supporting text have been increased by approximately 1px; display headings and structural typography remain unchanged.
+GitHub Pages: Settings > Pages > Deploy from a branch > main > /(root) > Save.
+
+All case study figures, revenue allocations and scenarios are illustrative assumptions, not actual company financial information or industry benchmarks.
